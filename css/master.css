@@ -1,0 +1,1100 @@
+/*-----------------BASICS----------------------------*/
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+html{
+	font-size:16px;
+	margin-top:0 !important;
+	width:100%;
+	height:100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.group:after {
+	content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+/*-----------------LAYOUT----------------------------*/
+.page-content-wrap{
+	background-image: url("../images/Killary-Background-Pages.png"); 
+	background-attachment: scroll;
+	box-shadow: inset 0px 23px 63px -10px #000;	
+	padding: 60px 0;
+}
+.page-content{
+	width:80%;
+	background-color: rgba(0,0,0,.35);
+	margin: 0 10%;
+}
+.mobile{
+	display:block;
+}
+.fix-mobile{
+	display:none;
+}
+#website_title{
+	display:none;
+}
+header h1{
+	display:none;
+}
+#page-header-photo{
+	padding-top:30%;
+	overflow:hidden;
+	position:relative;
+	height:0;
+}
+.page-header-photos{
+	position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 0;
+}
+/*-----------------HEADER----------------------------*/
+.top-header {
+	position: fixed;
+	width:100%;
+	height:100px;
+	top: 0;
+	left: 0;
+	z-index:10000;
+	background-color: rgba(0,0,0,.7);
+ }
+.bottom-header {
+  width:100%;
+}
+.bottom-header nav {
+	background-color: rgba(0,0,0,.5);
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+nav{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.nav-logo{
+	width:30%;
+	float:left;
+	padding-left: 10%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+#logo-header{
+	height:80px;
+}
+menu{
+	width:60%;
+	float:left;
+	max-height:100px;
+	margin: 0;
+	padding:0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.menu{
+	padding:0;
+	margin:0;
+}
+.menu .menu-item{
+	display:inline-block;
+	padding: 0 1rem;
+}
+.menu .menu-item a{
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Lobster';
+	font-size: 2rem;
+	color: #e891b5;
+}
+.menu .menu-item a:hover{
+	color:#fff;
+}
+.lang-menu{
+	width:10%;
+	float:left;
+	height:100px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.lang-menu ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display:inline;
+}
+.language-chooser-item{
+	display:inline;
+	padding: 0 0.5rem;
+}
+.language-chooser-item:first-child{
+		border-right: 2px solid #FFFFFF;
+}
+.language-chooser-item a{
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+.language-chooser-item a:hover,
+.language-chooser-item a:visited,
+.language-chooser-item a:focus,
+.language-chooser-item a:active{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+.lang-es,
+.lang-en{
+	width:100%;
+	height:50px;
+	display:inline-block;
+}
+.lang-es{
+	align-items: flex-start;
+}
+.lang-en{
+	align-items: flex-end;
+}
+.lang-es img,
+.lang-en img{
+	width:100%;
+}
+/*-----------------------TOOGLE MENU-----------------------------*/
+.fa-bars,
+.fa-bars:hover,
+.fa-bars:focus,
+.fa-search,
+.fa-search:hover,
+.fa-search:focus{
+  color:#FFFFFF;
+}
+.togglemenu{
+  display:none;
+}
+.responsive-menu{
+  display:none;
+}
+.toggle-menu{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.toggle-menu li{
+  font-weight: bold;
+  padding: 0.5rem 0;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: left;
+}
+.toggle-menu li:last-child{
+  padding-bottom: 0;
+}
+.toggle-menu li:hover{
+  background-color: #280e19;
+}
+.toggle-menu li a{
+	padding: 0 0.9rem;
+	font-size: 1.5rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Lobster';
+}
+.toggle-menu li a:hover{
+	color: #e891b5;
+}
+.toggle-menu li ul{
+  list-style-type: none;
+  padding: 0;
+}
+.toggle-menu li ul li{
+  padding: 0.5rem 0;
+  background-color: #000;
+  color: #FFFFFF;
+}
+.toggle-menu li ul li a{
+	padding: 0 1.8rem;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.toggle-menu .menu-item-has-children a{
+	margin-bottom: 0.5rem;
+	display:block;
+}
+.toggle-menu li ul li:hover{
+	background-color: #280e19;
+}
+.toggle-menu li ul li:first-child{
+	padding-top: 0.5rem
+}
+.toggle-menu li ul li:last-child{
+	padding-bottom: 0.5rem
+}
+.toggle-menu li ul li a{
+	margin: 0;
+}
+.qtranxs-lang-menu a img{
+	display: none;
+}
+/*-----------------FOOTER----------------------------*/
+footer{
+	background: url("../images/Killary-Footer.png") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top:2rem;
+}
+.footer-mail{
+	width: 50%;
+	padding: 0.5rem 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	border: 6px solid white;	
+}
+.footer-mail a{
+	font-family: 'Impact';
+	text-decoration: none;
+	font-size: 2rem;
+	color: #fff;
+}
+.footer-mail a:hover,
+.footer-mail a:visited,
+.footer-mail a:focus,{
+	text-decoration: none;
+	color: #e2b734;
+}
+.contact-form{
+	width:100%;
+	padding: 0 25%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.wpcf7{
+	width:100%;
+}
+.contact-form .cf-line,
+.contact-form .cf-text{
+	background-color:rgba(255,255,255,.5);
+	width:100%;
+	height:auto;
+	min-height:40px;
+	margin: 1rem 0;
+}
+.contact-form .cf-line span input{
+	width:100%;
+	background-color: transparent;
+	font-family: 'Impact';
+	font-size: 2rem;
+	padding: 0 1rem;
+	color: #000;
+	border:0;
+	border-color: transparent;
+	outline:none;
+}
+.contact-form .cf-line span input:focus{
+	outline:none;
+}
+.contact-form .cf-text{
+	min-height:200px;
+}
+.contact-form .cf-text span textarea{
+	width:100%;
+	height:200px;
+	padding: 0 1rem;
+	background-color: transparent;
+	font-family: 'Impact';
+	font-size: 2rem;
+	color: #000;
+	border:0;
+	border-color: transparent;
+	outline:none;
+}
+.cf-button input{
+	background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  font-family: 'Impact';
+  font-size: 2rem;
+  padding: 5px 10px 5px 10px;
+  border: 3px solid #fff;
+}
+.footer-logo{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+#footer-logo{
+	height:250px;
+	margin: 20px 0 10px 0;
+}
+.footer-social, .footer-musicApps{
+	width:100%;
+	margin: 10px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.iconosrs{
+	margin: 10px 5px 10px 5px;
+}
+.footer-social .fa-facebook-square{
+	color: #3C599F;
+}
+.footer-social .fa-google-plus-square{
+	color: #CF3D2E;
+}
+.footer-social .fa-instagram{
+	color: #A1755C;
+}
+.footer-social .fa-youtube{
+	color: #C52F30;
+}
+.footer-social .fa-twitter-square{
+	color: #32CCFE;
+}
+.footer-musicApps .fa-spotify{
+	color: #7ab800;
+}
+.footer-social .fa-facebook-square,
+.footer-social .fa-google-plus-official,
+.footer-social .fa-instagram,
+.footer-social .fa-youtube,
+.footer-social .fa-twitter,
+.footer-musicApps .fa-spotify,
+.footer-musicApps .fa-soundcloud{
+	color:#fff;
+}
+.imgrs{
+	height:32px;
+	margin: 10px 5px 10px 5px;
+}
+.footer-nav{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.footer-nav .menu{
+	margin: 0;
+	padding:0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.footer-nav .menu li{
+	display:inline-block;
+}
+.footer-nav .menu li a{
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Impact';
+	font-size: 1.5rem;
+	color: #fff;
+}
+.footer-nav .menu .menu-item{
+	padding: 0 10px;
+	background-color: transparent;
+	border-right: 2px solid white;
+}
+.footer-nav .menu .menu-item:last-child {
+	border-right: none;
+}
+.footer-bottom{
+	width:100%;
+}
+.footer-bottom-left,
+.footer-bottom-right{
+	float:left;
+	width:50%;
+}
+.footer-bottom-left{
+	text-align: left;
+}
+.footer-bottom-right{
+	text-align: right;
+}
+.footer-bot{
+	font-size: 0.8rem;
+	margin: 5px;
+	color: #FFFFFF;
+}
+.footer-bot a,
+.footer-bot a:hover,
+.footer-bot a:visited,
+.footer-bot a:focus{
+	color:#FFFFFF;
+}
+/*-----------------BODY-FRONTPAGE--------------------*/
+#Home_Killary{
+	width:100%;
+	height:100%;
+	position: relative;
+	background: url("../images/Killary_Home.png") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+ }
+.yt-section{
+	width:62.5%;
+	padding-right:30px;
+	float:left;
+	margin:20px 0;
+}
+.fb-section{
+	width:36.5%;
+	padding-right:1%;
+	float:right;
+	margin :20px 0;
+}
+.ytc_video_container{
+	padding-left: 50px;
+	background: url("../images/Killary-BackgroundVideo-Home.png") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#Killary-Separador{
+	width: 100%;
+  margin: 20px 0 20px 0;
+}
+#facebook #u_0_0 ._2p3a{
+	width:100% !important;
+}
+.cff-likebox{
+	margin:0;
+}
+.cff-wrapper{
+	background-color: #FFFFFF !important;
+}
+#cff .cff-item{
+	padding:20px 10px 15px 10px !important;
+}
+.cff-page-name,
+.cff-author-text,
+.cff-author-date,
+.cff-date,
+.cff-post-text,
+.cff-post-links,
+.cff-media-link,
+.cff-desc-wrap,
+.cff-shared-link,
+.cff-link-title,
+.cff-post-desc{
+	font-family:'Arimo';
+}
+.home-content{
+	width:100%;
+}
+#Killary-Separador-Bottom{
+	width: 36.5%;
+  margin: 20px 1% 20px 62.5%;
+}
+/*-----------------BIO-PAGE-------------------------*/
+#Bio_Killary{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position: absolute;
+	background-image: url("../images/Killary-Bio.png");
+	background-position: 50% 39%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.bio-content-left{
+	width:20%;
+	float:left;
+}
+#Bio-Flowers-Left{
+	width:100%;
+}
+.bio-content-center{
+	width:80%;
+	float:left;
+}
+.page_title{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-items: center;
+	height: 110px;
+}
+#page_title{
+	color:#e891b5;
+	font-family: 'Impact';
+	font-size: 3rem;
+	font-weight: lighter;
+	margin: 0 25% 0 0;
+}
+.bio_content p{
+	color:#f9efc5;
+	font-family: 'Rockwell';
+	font-size: 1rem;
+	margin: 1rem 25% 1rem 0;
+}
+.bio-footer{
+	width:100%;
+}
+.bio-footer-right{
+	width:20%;
+	margin-left: 80%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+#Bio-Flowers-Right{
+	width:100%;
+}
+#Killary-Separador-Bio{
+	margin: 20px 0;
+}
+/*-----------------MUSIC-PAGE-----------------------*/
+#Music_Killary{
+	width:100%;
+	height:100%;
+	position: relative;
+	background-image: url("../images/Killary-Music.png");
+	background-position: 50% 10%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.albums,
+.singles,
+.origenes,
+.amanecer,
+.herencia{
+	width:100%;
+}
+.album_image,
+.album_description{
+	float:left;
+	width:50%;
+	padding:30px 3%;
+	height:710px;
+	min-height:650px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.music-album{
+	width:400px;
+	height:490px;
+}
+.album_content{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.album_name,
+#album_image{
+	width:100%;
+}
+.album_name{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.album_title,
+.single_title{
+	width:100%;
+	color: #fffb6e;
+	font-family: 'Lobster';
+	text-align:center;
+	font-size: 3rem;
+	font-weight: lighter;
+}
+.singles{
+	padding-bottom: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.single_name{
+	padding: 20px 0;
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.herencia{
+	height:100%;
+	width:100%;
+	max-width:900px;
+	max-height:500px;
+	min-width:288px;
+	min-height:192px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background: url("../images/Killary-Marco-Singles.png") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.album_player,
+.single_player{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.single_player{
+	padding: 50px 0;
+}
+.music-single{
+	width:400px;
+	height:400px;
+}
+#Killary-Separador-Music{
+	margin: 20px 0;
+}
+/*-----------------GALLERY-PAGE---------------------*/
+#Gallery_Killary{
+	width:100%;
+	height:100%;
+	position: relative;
+	background-image: url("../images/Killary-Gallery.png");
+	background-position: 50% 39%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.Killary_Gallery_Item{
+	width:50%;
+	float:left;
+	padding: 30px 7.5%;
+}
+.Killary_Gallery_Item img{
+	width:100%;
+}
+.gallery_title{
+	color: #fffb6e;
+	font-family: 'Lobster';
+	text-align:center;
+	font-size: 3rem;
+	font-weight: lighter;
+	padding-bottom: 20px;
+	width:100%;
+}
+.Killary_VideoGallery_Item a,
+.Killary_VideoGallery_Item a:hover,
+.Killary_VideoGallery_Item a:focus,
+.Killary_VideoGallery_Item a:visited{
+	text-decoration: none
+}
+.Separador-Gallery{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+#Killary-Separador-Gallery{
+	padding-bottom: 50px;
+}
+.Killary_VideoGallery_Item{
+	width:100%;
+	padding: 3rem 20%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.Killary_VideoGallery_Item img{
+	width:100%;
+}
+.videoclip_title,
+.video_title{
+	color: #fffb6e;
+	font-family: 'Lobster';
+	text-align:center;
+	font-size:3rem;
+	font-weight: lighter;
+	padding: 30px 0;
+	width:100%;
+}
+.video-content{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.video-content p{
+	padding: 20px 10%;
+	color: #f9efc5;
+	font-family: 'Rockwell';
+	font-size:2rem;
+	font-weight: lighter;
+	padding-top: 20px;
+}
+.video-item{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	margin: 20px 0;
+}
+.photo-item{
+	width:33.33%;
+	padding:2% 5%;
+	float:left;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+.photo-item img{
+	width:100%;
+}
+/*-----------------HOME-PAGE------------------------*/
+#News_Killary{
+	width:100%;
+	height:100%;
+	position: relative;
+	background-image: url("../images/Killary-News.png");
+	background-position: 50% 39%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#blog_title{
+	padding-top:30px;
+	margin-left:5%;
+	color:#e891b5;
+	font-family: 'Impact';
+	font-size:40pt;
+	font-weight: lighter;
+}
+#Killary_news{
+	width:90%;
+	margin:20px 5%;
+}
+#Killary_minipost{
+	width:100%
+}
+.Killary_minipost_thumbnail{
+	width:30%;
+	float:left;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.Killary_minipost_thumbnail img{
+	width:100%;
+	height:auto;
+}
+.Killary_minipost_content-with-thumbnail{
+	width:70%;
+	float:left;
+	padding-left: 5%;
+}
+.Killary_minipost_content{
+	width:100%;
+	float:left;
+}
+#Killary_post_title{
+	font-family: 'Lobster';
+	font-size:30pt;
+	font-weight: lighter;
+	color: #fffb6e;
+}
+#Killary_post_title a,
+#Killary_post_title a:focus,
+#Killary_post_title a:visited,
+#Killary_post_title a:hover{
+	color: #fffb6e;
+	text-decoration: none;
+}
+time{
+	color: #f9efc5;
+	font-family: 'Lobster';
+	font-size:20pt;
+	font-weight: lighter;
+}
+#Killary_post_content,
+#Killary_post_excerpt{
+	color: #f9efc5;
+	font-family: 'Rockwell';
+	font-size:20pt;
+	font-weight: lighter;
+	padding-top: 20px;
+}
+#Killary_post_tags{
+	margin-top: 20px;
+	color: #f9efc5;
+	font-family: 'Lobster';
+	font-size:20pt;
+	font-weight: lighter;
+}
+#Killary_post_tags p{
+	float:left;
+}
+.post_tags{
+	display: inline-block;
+	padding:0;
+}
+.tags_link{
+	display: inline-block;
+	padding:0 8px;
+}
+.tags_link,
+.tags_link a,
+.tags_link a:focus,
+.tags_link a:visited,
+.tags_link a:hover{
+	font-family: 'Lobster';
+	font-size:20pt;
+	font-weight: lighter;
+	color: #fffb6e;
+	text-decoration: none;
+} 
+#Killary-Separador-News{
+	padding: 20px 0 30px 0;
+}
+/*-----------------SINGLE-PAGE----------------------*/
+#Killary_post{
+	width:90%;
+	margin: 0 5%;
+	padding:30px 0;
+}
+.Killary_post_thumbnail{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0 30px 0;
+	width:100%;
+}
+.Killary_post_thumbnail img{
+	width:100%;
+	height: auto;
+}
+#Killary_PostTitle{
+	font-family: 'Lobster';
+	font-size:40pt;
+	font-weight: lighter;
+	color: #fffb6e;
+}
+#Killary_PostTitle a,
+#Killary_PostTitle a:focus,
+#Killary_PostTitle a:visited,
+#Killary_PostTitle a:hover{
+	color: #fffb6e;
+	text-decoration: none;
+}
+.PostTime{
+	font-size: 30pt;
+}
+.post-categories{
+	padding:0;
+	font-family: 'Lobster';
+	font-size:20pt;
+	font-weight: lighter;
+	color: #fffb6e;
+}
+.post-categories li{
+	display: inline-block;
+}
+.post-categories li a{
+	font-family: 'Lobster';
+	font-size:20pt;
+	font-weight: lighter;
+	color: #e891b5;
+}
+.post-categories li a{
+	color: #e891b5;
+	text-decoration: none;
+}
+.fbc-comments{
+	margin-top:20px;
+}
+.fbc-title{
+	font-family: 'Lobster';
+	font-size:20pt;
+	font-weight: lighter;
+	color: #fffb6e;
+}
+.fbc-comment{
+	display:none;
+}
+/*-----------------Luna Arequipeña--------------------*/
+.logo-luna{
+	width:100%;
+}
+#logo-luna{
+	width:100%;
+	display:block;
+}
+.luna-mobile{
+	display:none;
+	background: url("../images/Killary-luna-aqp-mobile.png") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3rem;
+	padding: 3rem 5%;
+	color: #352351;
+	font-weight: bold;
+}
+.luna-one{
+	background-image: url("../images/killary-luna-aqp-1.png");
+	background-position: 50% 39%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	margin-bottom: 3rem;
+	padding: 3rem 5%;
+	color: #352351;
+	font-weight: bold;
+}
+.luna-two{
+	background-image: url("../images/killary-luna-aqp-2.png");
+	background-position: 50% 39%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	padding: 3rem 5%;
+	font-weight: bold;
+}
+.parrafo1-aqp{
+	width:100%;
+}
+.parrafo2-aqp{
+	width:50%;
+	margin-left:50%;
+}
+.block1-aqp{
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	text-shadow: 0 0 1rem black;
+}
+.block2-aqp{
+	color: #FFFFFF;	
+	font-family: "Montserrat";
+	text-shadow: 0 0 1rem black;
+}
+.lunaaqp-txt{
+	font-family: "Montserrat";
+	font-size:1.3rem;
+}
+/*-----------------MODAL WINDOW--------------------*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 50%;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.modalDialog > div img{
+	width:100%;
+	height:auto;
+	display:block;
+}
+.closeModal {
+	background: rgba(255,255,255,0.5);
+	color: #FFFFFF;
+	line-height: 30px;
+	position: absolute;
+	right: -25px;
+	text-align: center;
+	top: -15px;
+	width: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.closeModal:hover { 
+	background: #FFFFFF; 
+	text-decoration: none;
+}
+.closeModal:visited{
+	color:#000000;
+	text-decoration: none;
+}

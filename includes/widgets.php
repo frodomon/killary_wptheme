@@ -14,7 +14,7 @@ function header_widgets_init(){
     'name'          => 'Header Widget Zone',
     'id'            => 'header-widget',
     'description'   => '',
-    'before_widget' => '<div class="header-widget col-sm-3">',
+    'before_widget' => '<div class="lang-menu">',
     'after_widget'  => '</div>',
     'before_title'  => '<h2>',
     'after_title'   => '</h2>' );

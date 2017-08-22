@@ -22,17 +22,16 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <meta name="Description" content="Sitio web oficial de Killary, cantante y compositoria de Arequipa, Perú. Nueva música peruana para un nuevo Perú (para un nuevo mundo)">
+    <meta property="og:url" content="http://wwww.killaryperu.com" />
+    <meta property="og:site_name" content="Killary" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Killary | Nueva música peruana para un nuevo Perú" />
+    <meta property="og:description" content="Sitio web oficial de Killary, cantante y compositora nativa de Arequipa, Perú" />
+    <meta property="og:image" content="http://www.killaryperu.com/wp-content/themes/Killary/images/Killary-Home.png" />
     <?php wp_head(); ?>
   </head>
   <body>
-    <header>
-      <h1 class="site-title col-sm-9"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-      <nav>
-        <div class="nav-logo">
-          <img id="logo" src="<?php echo get_template_directory_uri().'/images/logo killary.png'; ?>">
-        </div>
-        <div class="nav-menu">
-            <?php wp_nav_menu( array('menu' => 'Menu Principal' )); ?>
-        </div>
-      </nav>
-    </header>
+    
+    
+      

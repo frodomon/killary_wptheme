@@ -1,0 +1,527 @@
+/*-----------------MEDIA-QUERIES--------------------*/
+@media only screen and (min-width: 2560px){
+	html{
+		font-size: 20px;
+	}
+	.bmm{
+		background-image: url("../images/Killary-Gallery-Video.png");
+	}
+	.clips{
+		background-image: url("../images/Killary-Gallery-Photo.png");	
+	}
+	.video-item{
+		width:900px;
+		height:600px;
+		background-repeat: no-repeat;
+		background-size: cover;	
+	}
+	.video-item iframe{
+		width:700px;
+		height:393.75px;
+	}
+}
+@media only screen and (min-width: 1716px) and (max-width: 2559px){
+	html{
+		font-size: 18px;
+	}
+	.bio_content p{
+		font-size: 1.5rem;
+	}
+	.bmm{
+		background-image: url("../images/Killary-Gallery-Video.png");
+	}
+	.clips{
+		background-image: url("../images/Killary-Gallery-Photo.png");	
+	}
+	.video-item{
+		width:900px;
+		height:600px;
+		background-repeat: no-repeat;
+		background-size: cover;	
+	}
+	.video-item iframe{
+		width:700px;
+		height:393.75px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1715px){
+	html{
+		font-size:14px;
+	}
+	.menu .menu-item a{
+		font-size: 1.9rem;
+	}
+	.bio_content p{
+		font-size: 1.5rem;
+	}
+	.video-item{
+		width:900px;
+		height:600px;
+		background-repeat: no-repeat;
+		background-size: cover;	
+	}
+	.bmm{
+		background-image: url("../images/Killary-Gallery-Video.png");
+	}
+	.clips{
+		background-image: url("../images/Killary-Gallery-Photo.png");	
+	}
+	.video-item iframe{
+		width:700px;
+		height:393.75px;
+	}
+	.Killary_minipost_thumbnail,
+	.Killary_minipost_content,
+	.Killary_minipost_content-with-thumbnail{
+		min-height: 260px;
+	}
+	.video_title,
+	.album_title{
+		font-size: 3rem;
+	}
+	.album_player,
+	.single_player{
+		width:360px;
+	}
+	.music-single{
+		height:360px;
+	}
+	.video-content p,
+	.fbc-title,
+	time,
+	#Killary_post_tags,
+	#Killary_post_tags p,
+	.tags_link,
+	.tags_link a,
+	.tags_link a:hover,
+	.tags_link a:visited,
+	.tags_link a:focus{
+		font-size: 18pt;	
+	}
+	#Killary_post_title{
+		font-size: 26pt;
+	}
+	#Killary_post_excerpt p,
+	#Killary_post_content p{
+		font-size: 16pt;
+	}
+	.video_title,
+	#Killary_PostTitle{
+		font-size: 30pt;
+	}
+	.PostTime{
+		font-size: 20pt;
+	}
+	.post-categories,
+	.post-categories li a{
+		font-size: 18pt;
+	}
+	.lunaaqp-txt{
+		font-size: 1.1rem;
+	}
+	.album_image{
+		display:none;
+	}
+	.album_description{
+		width:100%;
+	}
+	.album_player,
+	.single_player{
+		width:360px;
+	}
+	.music-single{
+		height:360px;
+	}
+	.herencia{
+		background: transparent;
+	}
+
+	.video-content p,
+	.fbc-title,
+	#Killary_post_excerpt p,
+	#Killary_post_tags,
+	#Killary_post_tags p,
+	.tags_link,
+	.tags_link a,
+	.tags_link a:hover,
+	.tags_link a:visited,
+	.tags_link a:focus{
+		font-size: 16pt;	
+	}
+	#Killary_post_excerpt p,
+	#Killary_post_content p{
+		font-size: 16pt;
+	}
+	#Killary_PostTitle{
+		font-size: 30pt;
+	}
+	.PostTime{
+		font-size: 24pt;
+	}
+	.post-categories,
+	.post-categories li a{
+		font-size: 20pt;
+	}
+	.lunaaqp-txt{
+		font-size: 1rem;
+	}
+	.bio_content p{
+		font-size: 1.5rem;
+	}
+}
+@media only screen and (max-width: 767px){
+	html{
+		font-size:14px;
+	}
+	.mobile{
+		display:none;
+	}
+	.fix-mobile{
+		width:100%;
+		padding: 0 5%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.page-content{
+		width:90%;
+		margin:0 5%;
+	}
+	#Home_Killary{
+		display:none;
+	}
+	/*--HEADER--*/
+	.bottom-header nav {
+		background-color: rgba(0,0,0,1);
+		width:100%;
+		height:100px;
+		position:relative;
+	}
+	menu,
+	.lang-menu{
+		display:none;
+	}
+	menu .menu-item{
+		padding: 33px 10px;
+	}
+	menu .menu li{
+		padding: 35px 5px;
+	}
+	.nav-logo{
+		width:85%;
+		padding:0 0 0 15%;
+	}
+	#logo-header {
+    height: 60px;
+    margin: 20px 0;
+	}
+	.togglemenu{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		width: 15%;
+		text-align: left;
+	}
+	/*--FOOTER--*/
+	.footer-mail{
+		border: 4px solid white;
+		width:80%;
+		margin: 0.5rem 10%;
+	}
+	.footer-contact h3,
+	.footer-mail a,
+	.contact-form .cf-line label,
+	.contact-form .cf-line span input,
+	.contact-form .cf-text label,
+	.contact-form .cf-text span textarea{
+		font-size: 1.5rem;
+	}
+	.contact-form .cf-text span textarea{
+		height:150px;
+	}
+	.cf-button input{
+		font-size: 12pt;
+	}
+	#footer-logo{
+		height:150px;
+	}
+	.contact-form{
+		padding:0 10%;
+	}
+	.contact-form .cf-line{
+		min-height:25px;
+	}
+	.contact-form{
+		padding:0 10%;
+	}
+	.contact-form .cf-line{
+		min-height:18px;
+		margin: 8px 0;
+	}
+	.contact-form .cf-text{
+		min-height:100px;
+		margin:8px 0;
+	}
+	.footer-nav .menu li a{
+		font-size: 1rem;
+	}
+	.footer-bottom{
+		padding-top: 1rem;
+	}
+	.footer-bottom-right,
+	.footer-bottom-left{
+		text-align: center;
+		width:100%;
+	}
+	/* PAGES LAYOUT*/
+	#page-header-photo{
+		padding:0;
+		height:100px;
+	}
+	#page-header-photos{
+		display:none;
+	}
+	.page_title{
+		justify-content: center;
+		height:80px;
+	}
+	#page_title{
+		margin:0;
+	}
+	/*BIO PAGE*/
+	.bio-content-center{
+		width:100%;
+		padding:0 5%;
+		margin: 0;
+	}
+	.bio_content p{
+		margin-right:0;
+	}
+	#Killary-Separador-Bio{
+		width:100%;
+	}
+	/*LUNA AREQUIPE:A; PAGE*/
+	.luna-mobile{
+		display:block;
+	}
+	.luna-one,
+	.luna-two{
+		display:none;
+	}
+	.parrafo2-aqp{
+		width:100%;
+		margin:0;
+	}
+	.lunaaqp-txt{
+		text-align: center;
+	}
+	/*MUSIC PAGE*/
+	.album_image{
+		display:none;
+	}
+	.album_description{
+		width:100%;
+	}
+	.album_player,
+	.single_player{
+		width:360px;
+	}
+	.herencia{
+		background:transparent;
+	}
+	.album_image,
+	.album_description{
+		height:650px;
+	}
+	.music-album{
+		width:280px;
+	}
+	.music-single{
+		height:280px;
+		width:280px;
+	}
+	#Killary-Separador-Music{
+		width:100%;
+	}
+	.album_title,
+	.single_title{
+		font-size: 2rem;
+	}
+	.herencia{
+		background:transparent;
+	}
+	.single_player{
+		padding:0;
+	}
+	/* Gallery Page*/
+	.Killary_Gallery_Item{
+		width:100%;
+	}
+	.Killary_VideoGallery_Item{
+		padding: 3rem 10%;
+	}
+	.video_title{
+		padding: 10px 0;
+		font-size: 2rem;
+	}
+	.video-item iframe{
+		width: 380px;
+		height: 213.75px;		
+	}
+	.photo-item{
+		width:50%;
+	}
+
+
+	.Killary_minipost_thumbnail{
+		display:none;
+	}
+	.Killary_minipost_content,
+	.Killary_minipost_content-with-thumbnail{
+		width:100%;
+	}
+	#Killary_post_title{
+		font-size: 24pt;
+	}
+	
+	time{
+		font-size: 18pt;
+	}
+
+	#Killary_PostTitle{
+		font-size: 24pt;
+	}
+	.PostTime{
+		font-size: 18pt;
+	}
+	.post-categories,
+	.post-categories li a{
+		font-size: 16pt;
+	}
+	.yt-section,
+	.fb-section{
+		width:100%;
+		padding:0 1%;
+	}
+	
+	#Killary-Separador-Bottom {
+		width:100%;
+		padding: 20px 1% 20px 1%;
+		margin:0;
+	}
+	.Killary_minipost_thumbnail{
+		display:none;
+	}
+	.Killary_minipost_content,
+	.Killary_minipost_content-with-thumbnail{
+		width:100%;
+	}
+	#Killary-Separador-News{
+		width:100%;
+	}
+	.video_title,
+	#blog_title{
+		font-size: 24pt;
+	}
+	.video_title{
+		padding: 10px 0;
+	}
+	#Killary_post_title{
+		font-size: 18pt;
+	}
+	time{
+		font-size: 14pt;
+	}
+	.video-content p,
+	.fbc-title,
+	#Killary_post_excerpt p,
+	#Killary_post_content p,
+	#Killary_post_tags,
+	#Killary_post_tags p,
+	.tags_link,
+	.tags_link a,
+	.tags_link a:hover,
+	.tags_link a:visited,
+	.tags_link a:focus{
+		font-size: 12pt;	
+	}
+	#Killary_PostTitle{
+		font-size: 24pt;
+	}
+	.PostTime{
+		font-size: 18pt;
+	}
+	.post-categories,
+	.post-categories li a{
+		font-size: 16pt;
+	}
+	.video-item iframe{
+		width: 280px;
+		height: 157.5px;		
+	}
+	.photo-item{
+		width:100%;
+	}
+
+	#Killary-Separador-Bio{
+		width:100%;
+	}
+	.page-content{
+		width:90%;
+		margin:0 5%;
+	}
+
+	
+	#Killary-Separador-Bottom {
+		width:100%;
+		padding: 20px 1% 20px 1%;
+		margin:0;
+	}
+
+	
+	.Killary_minipost_thumbnail{
+		display:none;
+	}
+	.Killary_minipost_content,
+	.Killary_minipost_content-with-thumbnail{
+		width:100%;
+	}
+	#Killary-Separador-News{
+		width:100%;
+	}
+	.video_title,
+	#blog_title{
+		font-size: 24pt;
+	}
+	.video_title{
+		padding: 10px 0;
+	}
+	#Killary_post_title{
+		font-size: 18pt;
+	}
+	time{
+		font-size: 14pt;
+	}
+	
+	#Killary_PostTitle{
+		font-size: 24pt;
+	}
+	.PostTime{
+		font-size: 18pt;
+	}
+	.post-categories,
+	.post-categories li a{
+		font-size: 16pt;
+	}
+	.video-item iframe{
+		width: 280px;
+		height: 157.5px;		
+	}
+	.photo-item{
+		width:100%;
+	}
+	.modalDialog > div {
+		width: 90%;
+	}
+}

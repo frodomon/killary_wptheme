@@ -1,27 +1,55 @@
 <!-- Archivo de cabecera global de Wordpress -->
 <?php get_header(); ?>
-<!-- Contenido de página de inicio -->
-<div id="main" class="row">
-	<div class="foto_Killary">
-		<img id="Killary" src="<?php echo get_template_directory_uri().'/images/foto-killary.jpg'; ?>">
+<header>
+	 <h1 class="site-title col-sm-9"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+</header>
+	<!-- Contenido de página de inicio -->
+	<div id="Home_Killary">
 	</div>
-	<div class="col-lg-8">
-		<?php echo do_shortcode('[youtube_channel]'); ?>
+	<div class="bottom-header">
+	  <nav>
+	    <div class="nav-logo">
+	      <?php $url = home_url( '/' ); ?>
+	      <a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary blanco.png'; ?>"></a>
+	    </div>
+	    <menu>
+	      <?php wp_nav_menu( array('menu' => 'Menu Principal' )); ?>
+	    </menu>
+	    <?php if (!dynamic_sidebar('header-widget')) {} ?>
+	    <div class="togglemenu">
+	      <a class="togglebar" href="#" title="Menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+	    </div>
+	  </nav>
 	</div>
-	<div class="col-lg-4">
-		<?php echo do_shortcode('[custom-facebook-feed]'); ?>
+
+<div class="responsive-menu">
+  <?php wp_nav_menu( array( 'theme_location' => 'primary mobile', 'menu_class' => 'toggle-menu' ) ); ?>
+</div>
+    
+<div class="page-content-wrap">
+	<div class="page-content group">
+		<div class="yt-section">
+			<?php echo do_shortcode('[youtube_channel]'); ?>
+		</div>
+		<div class="fb-section">
+			<img id="Killary-Separador" src="<?php echo get_template_directory_uri().'/images/Killary-Separador.png'; ?>">
+			<?php echo do_shortcode('[custom-facebook-feed]'); ?>
+			<img id="Killary-Separador" src="<?php echo get_template_directory_uri().'/images/Killary-Separador.png'; ?>">
+		</div>
 	</div>
 </div>
-<div class="row">
-	<div id="contact col-lg-12">
-		<form action="getform.php" method="get">
-	    	<label>E-mail: <input type="email" /></label><br />
-	    	<label>Mensaje:	<textarea name="textarea">Write something here</textarea></label><br />
-			<input type="submit" value="Submit" />
-		</form>
-	</div>
-</div>
-<!-- Archivo de barra lateral por defecto -->
-<!--<?php get_sidebar(); ?>-->
 <!-- Archivo de pié global de Wordpress -->
 <?php get_footer(); ?>
+<div id="openModal" class="modalDialog">
+   <div>
+   		<a href="#" title="Close" class="closeModal">X</a>
+      <a href="http://www.killaryperu.com/moon-of-arequipa/"><img src="<?php echo get_template_directory_uri().'/images/Killary_Home.png'; ?>" alt="Luna Arequipeña"></a>
+   </div>
+</div>
+<script type="text/javascript">
+  $(window).ready(function(){
+		$('#openModal .closeModal').on('click', function(){
+    	$('#openModal').hide();
+    });
+  });
+</script>

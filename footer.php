@@ -1,32 +1,46 @@
-<footer>
-		<div class="col-lg-4 footer-left">
-				<img id="flores" src="<?php echo get_template_directory_uri().'/images/flores.png'; ?>">
+	<footer>
+		<div class="footer-mail">
+				<a href="mailto:info@killaryperu.com">INFO@KILLARYPERU.COM</a>
 		</div>
-		<div class="col-lg-4 footer-center">
-			<ul class="footer-nav">
-				<?php wp_nav_menu( array('footer-menu' => 'Menu Principal' )); ?>
-			</ul>
-			
+		<div class="contact-form">
+			<?php 
+				if ( qtranxf_getLanguage() == 'es' ) {
+					echo do_shortcode('[contact-form-7 id="155" title="Formulario de Contacto"]');
+     	  }
+    		elseif ( qtranxf_getLanguage() == 'en' ) {
+    			echo do_shortcode('[contact-form-7 id="43" title="Contact Form"]');
+    		}
+    	?>
 		</div>
-		<div class="col-lg-4 footer-right">
-			<div class="footer-logo">
-				<img id="footer-logo" src="<?php echo get_template_directory_uri().'/images/logo killary.png'; ?>">
+		<div class="footer-logo">
+			<img id="footer-logo" src="<?php echo get_template_directory_uri().'/images/logo killary blanco.png'; ?>">
+		</div>
+		<div class="footer-social">
+			<a href="https://www.youtube.com/channel/UCzOxdPXjdXNSpI-lf-etE4w" target="_blank"><i class="fa fa-youtube fa-3x iconosrs" aria-hidden="true"></i></a>
+			<a href="https://instagram.com/killaryperufolk" target="_blank"><i class="fa fa-instagram fa-3x iconosrs" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/killaryperufolk" target="_blank"><i class="fa fa-facebook-square fa-3x iconosrs" aria-hidden="true"></i></a>
+			<a href="https://plus.google.com/b/104913230392088304644/104913230392088304644/" target="_blank"><i class="fa fa-google-plus-official fa-3x iconosrs" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/KILLARYPERUFOLK" target="_blank"><i class="fa fa-twitter fa-3x iconosrs" aria-hidden="true"></i></a>
+		</div>
+		<div class="footer-musicApps">
+			<a href="https://play.spotify.com/artist/1tA8k3FMK9hcADlblJjA0p" target="_blank"><i class="fa fa-spotify fa-3x iconosrs" aria-hidden="true"></i></a>
+			<a href="https://soundcloud.com/killaryperufolk" target="_blank"><i class="fa fa-soundcloud fa-3x iconosrs" aria-hidden="true"></i></a>
+			<a href="http://www.deezer.com/artist/6605930" target="_blank"><img class="imgrs" src="<?php echo get_template_directory_uri().'/images/deezer.png'; ?>" aria-hidden="true"></a>
+			<a href="https://play.google.com/store/music/artist/Killary?id=Agyfl4d4bebwijmyvyyfkif4baa" target="_blank"><img class="imgrs" src="<?php echo get_template_directory_uri().'/images/googleplay.png'; ?>" aria-hidden="true"></a>
+			<a href="https://itunes.apple.com/pe/artist/killary/id919433152" target="_blank"><img class="imgrs" src="<?php echo get_template_directory_uri().'/images/itunes.png'; ?>" aria-hidden="true"></a>
+		</div>
+		<div class="footer-nav">
+			<?php wp_nav_menu( array('footer-menu' => 'Menu Principal' )); ?>
+		</div>
+		<div class="footer-bottom">
+			<div class='footer-bottom-left'>
+				<p class='footer-bot'>Copyright &copy; <?=date('Y');?> <?php bloginfo('name'); ?>. Todos los derechos reservados</p>
 			</div>
-			<div class="footer-social">
-				<a href="https://www.youtube.com/channel/UCnbepXk3tvd4CKGN03VdIlg/videos" target="_blank"><i class="fa fa-youtube fa-3x iconosrs" aria-hidden="true"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-instagram fa-3x iconosrs" aria-hidden="true"></i></a>
-				<a href="https://www.facebook.com/aguardienteproducciones" target="_blank"><i class="fa fa-facebook-square fa-3x iconosrs" aria-hidden="true"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-google-plus-square fa-3x iconosrs" aria-hidden="true"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-twitter-square fa-3x iconosrs" aria-hidden="true"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-spotify fa-3x iconosrs" aria-hidden="true"></i></a>
-			</div>
-			<div class="footer-mail">
-				<a href="mailto:info@killaryperufolk.pe"><i class="fa fa-envelope" aria-hidden="true"></i> info@killaryperufolk.pe</a>
-			</div>
-		</div>
-		<div class="col-lg-12 copyright">
-			<small>Aguaymanto © <?php echo date("Y") ?></small>
-		</div>
+			<div class='footer-bottom-right'>
+				<p class='footer-bot'>Desarrollado por <a href="https://pe.linkedin.com/in/alfredohvasqueza" target="_blank"><strong>Alfredo Vásquez</strong></a></p>
+			</div>	
+		</div>	
 	</footer>
+<?php wp_footer(); ?>
 </body>
 </html>
