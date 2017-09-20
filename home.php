@@ -10,7 +10,7 @@
       <nav>
         <div class="nav-logo">
           <?php $url = home_url( '/' ); ?>
-          <a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary blanco.png'; ?>"></a>
+          <a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary purple.png'; ?>"></a>
         </div>
         <menu>
           <?php wp_nav_menu( array('menu' => 'Menu Principal' )); ?>

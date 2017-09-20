@@ -6,7 +6,7 @@
 	<!-- Contenido de página de inicio -->
 	 <div id="page-header-photo">
     <div class="page-header-photos">
-      <div id="Home_Killary" style="background-position-y: 7%;"></div>
+      <div id="Luna_Killary" style="background-position-y: 7%;"></div>
     </div>
     <div class="bottom-header">
       <nav>
