@@ -10,8 +10,10 @@
 		<div class="bottom-header">
 		  <nav>
 		    <div class="nav-logo">
-		      <?php $url = home_url( '/' ); ?>
-		      <a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary blanco.png'; ?>"></a>
+		    	<div class="logo">
+		      	<?php $url = home_url( '/' ); ?>
+		      	<a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary purple.png'; ?>"></a>
+		    	</div>
 		    </div>
 		    <menu>
 		      <?php wp_nav_menu( array('menu' => 'Menu Principal' )); ?>
@@ -23,6 +25,7 @@
 		  </nav>
 		</div>
 	</div>
+	</div>
 	<div class="responsive-menu">
   	<?php wp_nav_menu( array( 'theme_location' => 'primary mobile', 'menu_class' => 'toggle-menu' ) ); ?>
 	</div>
@@ -30,14 +33,17 @@
 		<div class="page-content">
 			<div class="Killary_VideoGallery_Item">
 				<h2 class="gallery_title">Videoclips</h2>
+				<div class="Separador-Gallery">
+					<img id="Killary-Separador-Gallery" src="<?php echo get_template_directory_uri().'/images/Killary-Separador.png'; ?>">
+				</div>
 				<a href="http://www.killaryperu.com/gallery/video-gallery/videoclips"><img src="https://c6.staticflickr.com/8/7642/28845457981_2b3246da0c_o.jpg"></a>
 			</div>
 			<div class="Killary_VideoGallery_Item">
 				<h2 class="gallery_title"><?php echo __(utf8_encode("<!--:en-->Searching for my Music<!--:--><!--:es-->Buscando mi M&#250sica<!--:-->")); ?></h2>
+				<div class="Separador-Gallery">
+					<img id="Killary-Separador-Gallery" src="<?php echo get_template_directory_uri().'/images/Killary-Separador.png'; ?>">
+				</div>
 				<a href="http://www.killaryperu.com/gallery/video-gallery/searching-for-my-music"><img src="https://c4.staticflickr.com/9/8599/28921573955_b169d8cbe4_o.jpg"></a>
-			</div>
-			<div class="Separador-Gallery">
-				<img id="Killary-Separador-Gallery" src="<?php echo get_template_directory_uri().'/images/Killary-Separador.png'; ?>">
 			</div>
 		</div>
 	</div>

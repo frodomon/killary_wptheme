@@ -13,7 +13,7 @@
     	?>
 		</div>
 		<div class="footer-logo">
-			<img id="footer-logo" src="<?php echo get_template_directory_uri().'/images/logo killary purple.png'; ?>">
+			<img id="footer-logo" src="<?php echo get_template_directory_uri().'/images/logo killary footer.png'; ?>">
 		</div>
 		<div class="footer-social">
 			<a href="https://www.youtube.com/channel/UCzOxdPXjdXNSpI-lf-etE4w" target="_blank"><i class="fa fa-youtube fa-3x iconosrs" aria-hidden="true"></i></a>

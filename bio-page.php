@@ -11,8 +11,10 @@
 		<div class="bottom-header">
 		  <nav>
 		    <div class="nav-logo">
-		      <?php $url = home_url( '/' ); ?>
-		      <a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary blanco.png'; ?>"></a>
+		    	<div class="logo">
+		      	<?php $url = home_url( '/' ); ?>
+		      	<a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary purple.png'; ?>"></a>
+		    	</div>
 		    </div>
 		    <menu>
 		      <?php wp_nav_menu( array('menu' => 'Menu Principal' )); ?>
@@ -27,25 +29,22 @@
 	<div class="responsive-menu">
 	  <?php wp_nav_menu( array( 'theme_location' => 'primary mobile', 'menu_class' => 'toggle-menu' ) ); ?>
 	</div>
-	<div class="page-content-wrap">
-		<div class="page-content">
-			<div class="bio-content-left mobile">
-				<img id="Bio-Flowers-Left"src="<?php echo get_template_directory_uri().'/images/Killary-Bio-Flor-Izq.png'; ?>">
-			</div>
+	<div class="page-content-wrap group">
+		<div class="page-content group">
 			<div class="bio-content-center">
-				<div class="page_title">
-					<h1 id="page_title"><?php the_title(); ?></h1>
+				<div class="page_title bio-title">
+					<h1 id="page_title" class="page-bio-title"><?php the_title(); ?></h1>
 				</div>
 				<div class="bio_content">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>   
 		        		<?php the_content(); ?>
 		    		<?php endwhile; endif; ?>
 				</div>	
+				<div class="bio-separador">
+					<img id="Killary-Separador" src="<?php echo get_template_directory_uri().'/images/Killary-Separador.png'; ?>">
+				</div>
 			</div>
 			<div class="bio-footer mobile">
-				<div class="bio-footer-right">
-					<img id="Bio-Flowers-Right" src="<?php echo get_template_directory_uri().'/images/Killary-Bio-Flor-Der.png'; ?>">
-				</div>
 			</div>
 			<div class="fix-mobile">
 				<img id="Killary-Separador-Bio" src="<?php echo get_template_directory_uri().'/images/Killary-Separador.png'; ?>">

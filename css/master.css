@@ -95,6 +95,10 @@ nav{
 	justify-content: center;
 	align-items: center;
 }
+.logo{
+	background-color: rgba(255,255,255,0.5);
+	padding: 0 2rem;
+}
 #logo-header{
 	height:100px;
 }
@@ -339,12 +343,11 @@ footer{
 }
 .cf-button input{
 	background-color: transparent;
-  border-color: #fff;
-  color: #fff;
+  color: #000000;
   font-family: 'Impact';
   font-size: 2rem;
   padding: 5px 10px 5px 10px;
-  border: 3px solid #fff;
+  border: 3px solid #000000;
 }
 .footer-logo{
 	width:100%;
@@ -545,7 +548,12 @@ footer{
 }
 .bio-content-center{
 	width:80%;
-	float:left;
+	margin: 0 10%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0 4rem 0;
 }
 .page_title{
 	display: flex;
@@ -554,18 +562,32 @@ footer{
 	align-items: center;
 	height: 110px;
 }
+.bio-title{
+	width:100%;
+}
 #page_title{
-	color:#e891b5;
-	font-family: 'Impact';
+	color:#e6d6ba;
+	font-family: 'Lobster';
 	font-size: 3rem;
 	font-weight: lighter;
 	margin: 0 25% 0 0;
 }
+.page-bio-title{
+	margin:0 !important;
+}
 .bio_content p{
 	color:#f9efc5;
-	font-family: 'Rockwell';
+	font-family: 'Antonio-Light';
 	font-size: 1rem;
-	margin: 1rem 25% 1rem 0;
+	text-align: justify;
+	letter-spacing: 0.5px;
+}
+.bio-separador{
+	width:30%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 }
 .bio-footer{
 	width:100%;
@@ -603,6 +625,10 @@ footer{
 .herencia{
 	width:100%;
 }
+.origenes,
+.amanecer{
+	padding: 3rem 0 2rem 0;
+}
 .album_image,
 .album_description{
 	float:left;
@@ -639,7 +665,7 @@ footer{
 .album_title,
 .single_title{
 	width:100%;
-	color: #fffb6e;
+	color:#f9efc5;
 	font-family: 'Lobster';
 	text-align:center;
 	font-size: 3rem;
@@ -715,7 +741,7 @@ footer{
 	width:100%;
 }
 .gallery_title{
-	color: #fffb6e;
+	color: #e6d6ba;
 	font-family: 'Lobster';
 	text-align:center;
 	font-size: 3rem;
@@ -738,6 +764,7 @@ footer{
 }
 #Killary-Separador-Gallery{
 	padding-bottom: 50px;
+	width: 50%;
 }
 .Killary_VideoGallery_Item{
 	width:100%;
@@ -981,7 +1008,57 @@ time{
 	-o-background-size: cover;
 	background-size: cover;
 }
-
+.lungaaqp-content-middle{
+	width:100%;
+	height:300px;
+	background-image: url("../images/Killary-LunaAQP.png");
+	background-position: 50% 39%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.lunaaqp-title{
+	width:100%;
+	margin:0;
+	padding:2rem 0 0 0;
+}
+.lunaaqp-content-top{
+	width:80%;
+	margin: 0 10%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 3rem;
+}
+.luna-aqp-left-column{
+	float:left;
+	width:42.5%;
+	margin: 0 2.5%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 0;
+}
+.luna-aqp-right-column{
+	float:left;
+	width:42.5%;
+	margin: 0 2.5%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 0;
+}
+.luna-aqp-left-column ul li ,
+.luna-aqp-right-column ul li,
+.lunaaqp-content-top ul li p{
+	font-family: 'Antonio-Light';
+	color: #FFFFFF;
+	font-size: 1.5rem;
+}
 .logo-luna{
 	width:100%;
 }
@@ -1049,6 +1126,20 @@ time{
 .lunaaqp-txt{
 	font-family: "Montserrat";
 	font-size:1.3rem;
+}
+.lunaaqp-title #page_title,
+.luna-aqp-left-column #page_title,
+.luna-aqp-right-column #page_title{
+	font-size: 4rem;
+}
+.separador-vertical{
+	float:left;
+	width:5%;
+	padding:3rem 0;
+}
+.separador-vertical img{
+	width:100%;
+	display:block;
 }
 /*-----------------MODAL WINDOW--------------------*/
 .modalDialog {

@@ -9,19 +9,21 @@
 			</div>
 		</div>
 		<div class="bottom-header">
-			<nav>
-  			<div class="nav-logo">
-  				<?php $url = home_url( '/' ); ?>
-    			<a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary blanco.png'; ?>"></a>
-  			</div>
-  			<menu>
+		  <nav>
+		    <div class="nav-logo">
+		    	<div class="logo">
+		      	<?php $url = home_url( '/' ); ?>
+		      	<a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php echo get_template_directory_uri().'/images/logo killary purple.png'; ?>"></a>
+		    	</div>
+		    </div>
+		    <menu>
 		      <?php wp_nav_menu( array('menu' => 'Menu Principal' )); ?>
 		    </menu>
 		    <?php if (!dynamic_sidebar('header-widget')) {} ?>
 		    <div class="togglemenu">
 		      <a class="togglebar" href="#" title="Menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
 		    </div>
-			</nav>
+		  </nav>
 		</div>
 	</div>
 	<div class="responsive-menu">
@@ -30,7 +32,7 @@
 	<div class="page-content-wrap">
 		<div class="page-content">
 			<div class="albums">
-				<div class="origenes">
+				<div class="origenes group">
 					<div class="album_image">
 						<div class="album_content">
 							<img id="album_image" src="<?php echo get_template_directory_uri().'/images/Killary - Origenes.png'; ?>">
@@ -48,7 +50,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="amanecer">
+				<div class="amanecer group">
 					<div class="album_image">
 						<div class="album_content">
 							<img id="album_image" src="<?php echo get_template_directory_uri().'/images/Killary - Canto al Amanecer.png'; ?>">
